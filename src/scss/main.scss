@@ -386,7 +386,7 @@ section {
       height: 700px;
     }
   }
-  > div {
+  > div:last-child {
     position: absolute;
     top: 60px;
     padding: 1rem;
