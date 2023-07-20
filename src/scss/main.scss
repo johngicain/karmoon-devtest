@@ -167,11 +167,13 @@ nav {
   }
   ul {
     display: flex;
+
     @media (min-width: $tablet-view) {
+      align-items: center;
       &:nth-child(2) {
         justify-content: center;
       }
-      &:last-child {
+      &:nth-child(3) {
         justify-content: end;
       }
     }
@@ -192,12 +194,13 @@ nav {
   select {
     font-family: $content-font, sans-serif;
     font-size: 12px;
+    text-transform: uppercase;
     width: 100%;
     border: none;
-    text-transform: uppercase;
+    padding: 0.5rem;
     cursor: pointer;
     @media (min-width: $tablet-view) {
-      width: 130px;
+      width: 140px;
     }
   }
 }
